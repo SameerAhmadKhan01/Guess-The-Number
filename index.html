@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-row">
+        <div class="guess-label">Guess The Number</div>
+        <button type="button" class="theme-toggle" aria-label="Toggle dark theme">Dark Theme</button>
+      </div>
+      
+      <div class="guess">?</div>
+
+      <div class="number">
+        <input type="number" placeholder="Enter a Number" />
+      </div>
+
+      <p class="message">Start guessing...</p>
+
+      <div class="score-board">
+        <div class="score-item">
+          <span>Current Score:</span>
+          <span class="score">20</span>
+        </div>
+        <div class="score-item">
+          <span>High Score:</span>
+          <span class="highscore">0</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn-check">Check</button>
+        <button type="button" class="btn-again">Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
