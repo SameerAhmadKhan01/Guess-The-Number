@@ -2,7 +2,7 @@
 
 let score = 20;
 let highscore = 0;
-let RandomGuess = Math.trunc(Math.random() * 90) + 10;
+let RandomGuess = Math.trunc(Math.random() * 20) + 1;
 
 const body = document.body;
 const inputEl = document.querySelector(".number input");
@@ -62,7 +62,7 @@ document.querySelector('.btn-check').addEventListener('click', Check);
 
 document.querySelector('.btn-again').addEventListener('click', function() {
     score = 20;
-    RandomGuess = Math.trunc(Math.random() * 90) + 10;
+    RandomGuess = Math.trunc(Math.random() * 20) + 1;
     messageEl.textContent = "Start guessing...";
     scoreEl.textContent = score;
     guessEl.textContent = "?";
